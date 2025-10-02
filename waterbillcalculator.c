@@ -7,7 +7,7 @@ Description:Water bill calculator
 Above 60 units=30 KES per unit
 */
 #include<stdio.h>  //header file
-
+//water bill function
 int main(){
 
 	int water_units;
@@ -25,8 +25,10 @@ int main(){
 	else if(water_units>60){
 		Total_water_bill=water_units*30;
 	}
+	//display total water bill
 	printf("Your total water bill is KES%.2lf", Total_water_bill);
 	
 	return 0;	
 	
+
 }
