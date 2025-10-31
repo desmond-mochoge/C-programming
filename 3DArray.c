@@ -3,7 +3,7 @@
   DESCRIPTION:Program to check multiple branches
 */
 #include <stdio.h>
-
+//Main function
 int main() {
     int chain[3][5][10];
     int i, j, k;
@@ -11,8 +11,8 @@ int main() {
     int totalOccupied = 0, totalVacant = 0;
 
     printf(" BRANCHES OCCUPATION \n");
-    printf("Enter 1 for occupied and 0 for vacant rooms.\n");
-
+    printf("Enter 1 for occupied and 0 for vacant rooms.\n");//guideline to user
+//loop functions
     for (i = 0; i < 3; i++) {
         printf("Branch %d:\n", i + 1);
 
@@ -30,7 +30,7 @@ int main() {
                 else
                     vacant++;
             }
-
+            //Displays occupancy
             printf("  Floor %d : Occupied= %d , Vacant= %d\n", j + 1, occupied, vacant);
 
             totalOccupied += occupied;
@@ -45,4 +45,5 @@ int main() {
     printf("Total Rooms in all Branches: %d\n", totalOccupied + totalVacant);
 
     return 0;
+
 }
