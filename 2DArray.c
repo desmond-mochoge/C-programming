@@ -2,9 +2,9 @@
   REG NO:PA106/G/28781/25
   DESCRIPTION:Program to check room occupancy
 */
-
+//header file
 #include <stdio.h>
-
+//main function
 int main() {
     int occupancy[5][10];
     int i, j;
@@ -12,8 +12,8 @@ int main() {
     int totaloccupied = 0, totalvacant = 0;
 
     printf("ROOM OCCUPANCY (ONE BRANCH)\n");
-    printf("Enter 1 for occupied and 0 for vacant rooms.\n");
-
+    printf("Enter 1 for occupied and 0 for vacant rooms.\n");//Display guideline
+    //loop function
     for (i = 0; i < 5; i++) {
         printf("Floor %d:\n", i + 1);
         occupied = 0;
@@ -29,7 +29,7 @@ int main() {
                 vacant++;
         }
 
-        printf("Floor %d : Occupied = %d , Vacant= %d\n", i + 1, occupied, vacant);
+        printf("Floor %d : Occupied = %d , Vacant= %d\n", i + 1, occupied, vacant);//Display occupancy
 
         totaloccupied += occupied;
         totalvacant += vacant;
@@ -40,4 +40,5 @@ int main() {
     printf("Total Rooms in the Branch: %d\n", totaloccupied + totalvacant);
 
     return 0;
+
 }
